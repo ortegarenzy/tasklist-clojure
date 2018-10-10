@@ -1,0 +1,83 @@
+html {
+	background-color: #3e3f3a;
+	color: #ffffff;
+	font-family: 'VT323';
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+*, :after, :before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	display: table;
+	width: 70%;
+	margin: 100px auto;
+	text-align: center;
+}
+.container h1 {
+	font-size: 60px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px black;
+	border-bottom: 1px solid rgba(255, 255, 255, .125);
+}
+.row {
+	margin-bottom: 15px;
+}
+.row > * {
+	width: 100%;
+}
+input[type="text"] {
+	-webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 26px;
+	font-family: 'VT323';
+	width: 30%;
+}
+.btn {
+    display: block;
+	margin: 0 auto;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    transition: all .15s ease-in-out;
+    border-radius: 0;
+	cursor: pointer;
+	user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 18px;
+    line-height: 1.5;
+	background-color: #f3f3f3;
+    border-color: #f3f3f3;
+	color: #000000;
+	text-transform: uppercase;
+	font-family: 'VT323';
+	width: 30%;
+	border-radius: 0.25rem;
+}
+.block {
+	display: block;
+}
+.result {
+	background-color: #000000;
+	padding: 10px;
+}
