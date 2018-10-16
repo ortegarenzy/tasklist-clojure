@@ -10,5 +10,6 @@
 				[org.clojure/java.jdbc "0.3.5"]
 				[compojure "1.1.6"]
 				[ring/ring-jetty-adapter "1.2.1"]
+				[ring/ring-json "0.3.1"]
 				[hiccup "1.0.4"]]
 	:main tasklist.core)

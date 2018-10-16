@@ -1,13 +1,11 @@
 (ns tasklist.models.task
-	(:require [clojure.java.jdbc :as jdbc]))
-
-(def mysql-db {:subprotocol "mysql"
-	:subname "//localhost:3306/tasklist"
-	:user "root"
-	:password "florentino"})
+	(:require [clojure.java.jdbc :as jdbc]
+		[tasklist.models.dbmanager :as manager]))
 
 (defn all []
-  (jdbc/query mysql-db ["SELECT * FROM tasks"]))
+  (jdbc/query manager/mysql_connection ["SELECT * FROM tasks"]))
 
-(defn create [name]
-	(jdbc/insert! mysql-db :tasks {:taskname name }))
+(defn create [title, description, status]
+	(jdbc/insert! manager/mysql_connection :tasks {:title title :description description :status status }))
+(defn delete [title]
+	(jdbc/delete! manager/mysql_connection :tasks ["title = ?" title]))

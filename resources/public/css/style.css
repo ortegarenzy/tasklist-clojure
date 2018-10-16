@@ -12,6 +12,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+ul {
+	list-style: none;
+}
 .container {
 	display: table;
 	width: 70%;
@@ -76,8 +79,35 @@ input[type="text"] {
 }
 .block {
 	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .result {
 	background-color: #000000;
 	padding: 10px;
+}
+.list-tasks h2 {
+	font-size: 40px;
+}
+.list {
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+	border: 1px solid rgba(255, 255, 255, .125);
+	padding: 10px;
+}
+.content-holder {
+	float: left;
+	width: 48%;
+}
+.clear {
+	content: "";
+	clear: both;
+}
+.icon {
+	float: right;
+	vertical-align: middle;
+}
+.icon + .icon {
+	margin-right: 15px;
 }
